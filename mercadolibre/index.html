@@ -1,99 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="javiera leon">
     <link rel="stylesheet" href="static/css/style.css">
-    <title>mercado libre</title>
+    <title>Mercado Libre</title>
 </head>
-
 <body>
     <header>
-        <div class="contenedor - header">
+        <div class="contenedor-header">
             <div class="seccion-barra">
-            <div class="logo">
-                <img src="static/images/" alt="mercado libre">
-            </div>
-            <div class="buscador">
-                <input type="text" placeholder="buscar productos,marcas y mas">
-                <button>buscar</button>
-            </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="static/images/logo.png" alt="Mercado Libre">
+                    </a>
+                </div>
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar productos, marcas y más...">
+                    <button type="submit">
+                        <img src="static/images/icono-lupa.png" alt="Buscar">
+                    </button>
+                </div>
+                <div class="publicidad">
+                    <img src="static/images/promo-envio.png" alt="Envío gratis en tu primera compra">
+                </div>
             </div>
 
-            <nav class="navegacion">
-                <ul>
-                    <li> <a href="#"> categorias</a></li>
-                    <li> <a href="#"> ofertas</a></li>
-                    <li> <a href="#"> cupones</a></li>
-                    <li> <a href="#"> supermercado</a></li>
-                    <li> <a href="#"> moda</a></li>
-                </ul>
+            <div class="seccion-barra2">
+                <div class="ubicacion">
+                    <a href="pages/ubicacion.html">
+                        <img src="static/images/icono-pin.png" alt="Ubicación">
+                        <span>Ingresa tu ubicación</span>
+                    </a>
+                </div>
+
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Cupones</a></li>
+                        <li><a href="#">Supermercado</a></li>
+                        <li><a href="#">Moda</a></li>
+                        <li><a href="#">Mercado Play</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
                 </nav>
-        <div class="seccion-barra2">
-            <div class="publicidad">
-                <img src="static/images/" alt="publicidad">
-            </div>
-            <p>envio gratis en productos  desde $9.990</p>
-        </div> 
-        </div>
 
+                <nav class="menu-usuario">
+                    <ul>
+                        <li><a href="pages/registro.html">Crea tu cuenta</a></li>
+                        <li><a href="pages/registro.html">Ingresa</a></li>
+                        <li><a href="#">Mis compras</a></li>
+                        <li>
+                            <a href="#">
+                                <img src="static/images/icono-carrito.png" alt="Carrito de compras">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-       <main class="container">
+
+    <main class="container">
         <section class="banner">
             <div class="banner-texto">
-                <h1>Tu primera compra</h1>
-                <h2>con ofertas unica</h2>
-
-                <p>descubre descuentos especiales</p>
-                <a href="#" class="boton-banner">
-                    ver ofertas </a>
+                <p class="marcas">RALPH LAUREN | LANCÔME | DOLCE & GABBANA | ESTÉE LAUDER</p>
+                <h1>Lo mejor en perfumes</h1>
+                <div class="etiquetas-banner">
+                    <span class="badge-amarillo">HASTA 40% OFF</span>
+                    <span class="badge-blanco">ENVÍO GRATIS DESDE $19.990</span>
+                </div>
             </div>
             <div class="banner-imagen">
-                <img src="static/images/" alt="productos en oferta">
+                <img src="static/images/banner-perfumes.png" alt="Perfumes en oferta">
+            </div>
+        </section>
+
+        <section class="accesos">
+            <article class="tarjeta">
+                <h3>Envío gratis</h3>
+                <img src="static/images/icono-envio.png" alt="Envío gratis">
+                <p>Beneficio por ser tu primera compra.</p>
+                <a href="#" class="boton-tarjeta">Mostrar productos</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Ingresa a tu cuenta</h3>
+                <img src="static/images/icono-cuenta.png" alt="Cuenta">
+                <p>Disfruta de ofertas y compra sin límites.</p>
+                <a href="pages/registro.html" class="boton-tarjeta">Ingresar a tu cuenta</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Ingresa tu ubicación</h3>
+                <img src="static/images/icono-ubicacion.png" alt="Ubicación">
+                <p>Consulta costos y tiempos de entrega.</p>
+                <a href="pages/ubicacion.html" class="boton-tarjeta">Ingresar ubicación</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Medios de pago</h3>
+                <img src="static/images/icono-pago.png" alt="Medios de pago">
+                <p>Paga tus compras de forma rápida y segura.</p>
+                <a href="#" class="boton-tarjeta">Conocer medios de pago</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Menos de $15.000</h3>
+                <img src="static/images/icono-precio.png" alt="Menos de 15.000">
+                <p>Descubre productos con precios bajos.</p>
+                <a href="#" class="boton-tarjeta">Mostrar productos</a>
+            </article>
+
+            <article class="tarjeta">
+                <h3>Más vendidos</h3>
+                <img src="static/images/icono-vendidos.png" alt="Más vendidos">
+                <p>Explora los productos que son tendencia.</p>
+                <a href="#" class="boton-tarjeta">Ir a Más vendidos</a>
+            </article>
+        </section>
+
+        <section class="productos">
+            <div class="titulo-seccion">
+                <h2>Ofertas</h2>
+                <a href="#">Mostrar todas las ofertas</a>
             </div>
 
+            <div class="grid-productos">
+                <article class="producto">
+                    <img src="static/images/producto1.png" alt="Producto 1">
+                    <div class="info-producto">
+                        <span class="precio-anterior">$49.990</span>
+                        <div class="precio-actual">
+                            <span class="precio">$29.990</span>
+                            <span class="descuento">40% OFF</span>
+                        </div>
+                        <p class="envio">Envío gratis</p>
+                        <h3>Audífonos Inalámbricos Bluetooth</h3>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="static/images/producto2.png" alt="Producto 2">
+                    <div class="info-producto">
+                        <span class="precio-anterior">$89.990</span>
+                        <div class="precio-actual">
+                            <span class="precio">$59.990</span>
+                            <span class="descuento">33% OFF</span>
+                        </div>
+                        <p class="envio">Envío gratis</p>
+                        <h3>Smartwatch Deportivo Resistente al Agua</h3>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="static/images/producto3.png" alt="Producto 3">
+                    <div class="info-producto">
+                        <span class="precio-anterior">$25.990</span>
+                        <div class="precio-actual">
+                            <span class="precio">$14.990</span>
+                            <span class="descuento">42% OFF</span>
+                        </div>
+                        <p class="envio">Envío gratis</p>
+                        <h3>Perfume Importado Eau de Toilette 100ml</h3>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="static/images/producto4.png" alt="Producto 4">
+                    <div class="info-producto">
+                        <span class="precio-anterior">$120.000</span>
+                        <div class="precio-actual">
+                            <span class="precio">$84.000</span>
+                            <span class="descuento">30% OFF</span>
+                        </div>
+                        <p class="envio">Envío gratis</p>
+                        <h3>Zapatillas Urbanas Unisex</h3>
+                    </div>
+                </article>
+            </div>
         </section>
-        <main class="accesos">
-            <article class="tarjeta">
-                <img src="static/images/" alt="">
-                <h3>Ofertas</h3>
-                <p>Encuentra descuentos</p>
-                <a href="#">Ver ofertas</a>
-            </article>
 
-             <article class="tarjeta">
-                <img src="static/images/" alt="">
-                <h3>Ofertas</h3>
-                <p>Encuentra descuentos</p>
-                <a href="#">Ver ofertas</a>
-            </article>
-            
-             <article class="tarjeta">
-                <img src="static/images/" alt="">
-                <h3>mercadopago</h3>
-                <p>Encuentra descuentos</p>
-                <a href="#">Ver ofertas</a>
-            </article>
+        <section class="suscripcion">
+            <div class="suscripcion-header">
+                <h2>Suscríbete al nivel 6</h2>
+                <div class="precio-suscripcion">
+                    <span class="precio-mes">$5.990</span>
+                    <span>/mes</span>
+                </div>
+            </div>
+            <div class="suscripcion-cuerpo">
+                <p>Consigue los mejores beneficios en Mercado Libre</p>
+                <div class="beneficios-lista">
+                    <div class="beneficio">
+                        <img src="static/images/icono-envio-gratis.png" alt="Envíos">
+                        <span>Envíos gratis en millones de productos desde $19.990</span>
+                    </div>
+                    <div class="beneficio">
+                        <img src="static/images/icono-disney.png" alt="Streaming">
+                        <span>Disney+ incluido sin cargo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="suscripcion-footer">
+                <a href="pages/registro.html" class="boton-suscribir">Suscríbete</a>
+            </div>
+        </section>
 
-             <article class="tarjeta">
-                <img src="static/images/" alt="">
-                <h3>Ofertas</h3>
-                <p>Encuentra descuentos</p>
-                <a href="#">Ver ofertas</a>
-            </article>
+        <section class="categorias">
+            <h2>Categorías populares</h2>
+            <div class="grid-categorias">
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-autos.png" alt="Autos">
+                    <span>Autos, Motos y Otros</span>
+                </a>
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-celulares.png" alt="Celulares">
+                    <span>Celulares y Telefonía</span>
+                </a>
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-computacion.png" alt="Computación">
+                    <span>Computación</span>
+                </a>
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-ropa.png" alt="Ropa">
+                    <span>Vestuario y Calzado</span>
+                </a>
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-hogar.png" alt="Hogar">
+                    <span>Hogar y Muebles</span>
+                </a>
+                <a href="#" class="item-categoria">
+                    <img src="static/images/cat-belleza.png" alt="Belleza">
+                    <span>Belleza y Cuidado Personal</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
-             <article class="tarjeta">
-                <img src="static/images/" alt="">
-                <h3>Ofertas</h3>
-                <p>Encuentra descuentos</p>
-                <a href="#">Ver ofertas</a>
-            </article>
+    <footer>
+        <div class="footer-beneficios">
+            <div class="beneficio-item">
+                <img src="static/images/footer-pago.png" alt="Pago">
+                <h3>Elige cómo pagar</h3>
+                <p>Con Mercado Pago, paga con tarjeta, débito o efectivo. También puedes pagar en hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+            </div>
+            <div class="beneficio-item">
+                <img src="static/images/footer-envio.png" alt="Envío">
+                <h3>Envío gratis desde $19.990</h3>
+                <p>Con solo estar registrado en Mercado Libre tienes envíos gratis en millones de productos seleccionados.</p>
+            </div>
+            <div class="beneficio-item">
+                <img src="static/images/footer-seguridad.png" alt="Seguridad">
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devuélvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+            </div>
+        </div>
 
-        </main>
-   </main>
-
+        <div class="footer-legal">
+            <ul>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Cómo cuidamos tu privacidad</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <p>Copyright © 1999-2026 MercadoLibre Chile Ltda.</p>
+        </div>
+    </footer>
 </body>
-
 </html>

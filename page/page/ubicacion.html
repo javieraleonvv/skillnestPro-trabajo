@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="javiera leon">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Elige una dirección - Mercado Libre</title>
+</head>
+<body class="body-ubicacion">
+    <main class="fondo-modal">
+        <div class="modal-ubicacion">
+            <!-- Cabecera de la ventana -->
+            <div class="modal-header">
+                <h2>Elige una dirección</h2>
+                <a href="../index.html" class="cerrar-modal">
+                    <img src="../static/images/icono-cerrar.png" alt="Cerrar">
+                </a>
+            </div>
+
+            <!-- Formulario de selección -->
+            <form action="../index.html" class="form-ubicacion">
+                <div class="opcion-direccion">
+                    <span class="badge-recomendado">Recomendado</span>
+                    <label class="radio-ubicacion">
+                        <input type="radio" name="direccion" value="actual">
+                        <span>Usar mi ubicación actual</span>
+                    </label>
+                </div>
+
+                <!-- Botones inferiores -->
+                <div class="modal-botones">
+                    <button type="submit" class="btn-confirmar">Confirmar</button>
+                    <button type="button" class="btn-otra">Elige otra ubicación</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
